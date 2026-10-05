@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-10-05 19:43:21",
+  "random_seed": 42,
+  "category_classifier": {
+    "model_name": "Random Forest Category Classifier",
+    "feature_extractor": "TF-IDF (1, 2 n-grams)",
+    "num_categories": 12,
+    "num_train_samples": 1920,
+    "num_test_samples": 480,
+    "test_accuracy": 1.0,
+    "test_precision_weighted": 1.0,
+    "test_recall_weighted": 1.0,
+    "test_f1_weighted": 1.0,
+    "meets_target_requirement": true
+  },
+  "expense_forecaster": {
+    "model_name": "XGBoost Expense Forecaster",
+    "task_type": "Regression",
+    "num_train_records": 270,
+    "num_test_records": 60,
+    "test_rmse": 231.7328,
+    "test_mae": 190.8284,
+    "forecast_horizon_months": 6
+  },
+  "anomaly_detector": {
+    "model_name": "Isolation Forest Anomaly Detector",
+    "contamination_parameter": 0.15,
+    "num_samples_evaluated": 500,
+    "num_anomalies_detected": 75,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0
+  },
+  "total_training_time_seconds": 2.79
+}
